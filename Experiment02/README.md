@@ -121,13 +121,7 @@ A screen recording demonstrating the execution of all lifecycle methods has been
 
 **Recording:**
 
-```
-
-
 https://github.com/user-attachments/assets/2228f5d3-fdc3-485d-b14b-5cabd7b87b0b
-
-
-```
 
 ---
 
