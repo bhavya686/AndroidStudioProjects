@@ -120,7 +120,8 @@ Insert screenshot here.
 Example:
 
 ```
-images/output.png
+<img width="2560" height="1600" alt="Screenshot_20260807_124529" src="https://github.com/user-attachments/assets/b9e56829-34d9-4cb0-af42-3e3b9f2e8d3f" />
+
 ```
 
 ---
@@ -135,11 +136,11 @@ Verify that selecting a course displays its details.
 
 ### Input
 
-Select **Java**.
+Select **Android**.
 
 ### Expected Output
 
-Java details are displayed.
+Android details are displayed.
 
 ### Actual Output
 
@@ -148,7 +149,8 @@ Working Successfully.
 Screenshot:
 
 ```
-images/testcase1.png
+<img width="960" height="600" alt="1" src="https://github.com/user-attachments/assets/3485b558-51f1-4ef6-b12d-63ba91bf1a63" />
+
 ```
 
 ---
@@ -173,40 +175,14 @@ Debugger pauses only when Android is selected.
 
 Working Successfully.
 
-Screenshot:
+Recording:
 
 ```
-images/testcase2.png
-```
 
----
 
-## Test Case 3
+https://github.com/user-attachments/assets/6ddf17da-0337-4be3-9365-f58b2aa5ab96
 
-### Objective
 
-Verify application using Name and USN.
-
-### Input
-
-Display
-
-Bhavya Khatri
-
-25MCAR0217
-
-### Expected Output
-
-Name and USN appear correctly.
-
-### Actual Output
-
-Working Successfully.
-
-Screenshot:
-
-```
-images/testcase3.png
 ```
 
 ---
