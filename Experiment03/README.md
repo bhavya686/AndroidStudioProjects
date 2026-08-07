@@ -119,10 +119,7 @@ Insert screenshot here.
 
 Example:
 
-```
 <img width="2560" height="1600" alt="Screenshot_20260807_124529" src="https://github.com/user-attachments/assets/1f229569-f022-4579-8263-41a86090e8c5" />
-
-```
 
 ---
 
@@ -148,10 +145,7 @@ Working Successfully.
 
 Screenshot:
 
-```
 <img width="960" height="600" alt="1" src="https://github.com/user-attachments/assets/13673f24-8fb8-4503-a6e8-2de62804c27b" />
-
-```
 
 ---
 
@@ -177,13 +171,7 @@ Working Successfully.
 
 Recording:
 
-```
-
-
 https://github.com/user-attachments/assets/8094a6c4-7247-49ca-9b37-3fd596ae1918
-
-
-```
 
 ---
 
