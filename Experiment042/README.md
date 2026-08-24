@@ -214,11 +214,11 @@ The application should navigate from the Login screen to the Dashboard screen.
 
 **Proof:**
 
-Add the screenshot here:
 
-```text
-screenshots/test_case_1_login_navigation.png
-```
+
+https://github.com/user-attachments/assets/3850d8d9-adcc-4860-9855-3da664a9678e
+
+
 
 ### Test Case 2 — Intent Data Transfer
 
@@ -243,89 +243,11 @@ This confirms that the username was successfully passed from `MainActivity` to `
 
 **Proof:**
 
-Add the screenshot here:
 
-```text
-screenshots/test_case_2_intent_data_transfer.png
-```
 
-### Test Case 3 — Username / Name Demonstration
+https://github.com/user-attachments/assets/403e3ec0-601e-4dd3-b476-00faa4becfcc
 
-**Input:**
-- Username: `<Your Name>`
-- Password: `1234`
 
-**Action:**
-1. Enter your actual name/username.
-2. Click **LOGIN**.
-3. Observe the Dashboard.
-
-**Expected Result:**
-
-The Dashboard should display the entered name dynamically.
-
-Example:
-
-```text
-Welcome, Bhavya!
-```
-
-**Proof:**
-
-Add the screenshot here:
-
-```text
-screenshots/test_case_3_name_display.png
-```
-
-### Test Case 4 — Logout Navigation
-
-**Action:**
-1. Reach the Dashboard.
-2. Click **LOG OUT**.
-
-**Expected Result:**
-
-`HomeActivity` should close and the application should return to the Login screen.
-
-**Proof:**
-
-```text
-screenshots/test_case_4_logout.png
-```
-
-## 10. Output Screenshots
-
-Add the final application screenshots to the `screenshots` folder.
-
-Recommended files:
-
-```text
-screenshots/
-├── login_screen.png
-├── dashboard_screen.png
-├── test_case_1_login_navigation.png
-├── test_case_2_intent_data_transfer.png
-├── test_case_3_name_display.png
-└── test_case_4_logout.png
-```
-
-### Login Screen
-
-<!-- Add image here -->
-
-### Dashboard Screen
-
-<!-- Add image here -->
-
-## 11. Test Case Evidence
-
-The screenshots provide evidence that:
-
-1. The Login button successfully starts the Dashboard Activity.
-2. The username is transferred through an Intent extra.
-3. The Dashboard displays the transferred username dynamically.
-4. The Logout button returns the user to the Login screen.
 
 ## 12. Result
 
@@ -337,9 +259,3 @@ The experiment demonstrates:
 - Receiving and displaying Intent data.
 - Returning between Activities using `finish()`.
 - Designing a simple and user-friendly Login and Dashboard interface.
-
-## 13. Conclusion
-
-This experiment demonstrates the practical use of **Android Intent** for communication and navigation between Activities. The application successfully transfers user-entered data from the Login screen to the Dashboard and provides a basic navigation flow between the two screens.
-
-The implementation focuses on Intent functionality while using a clean and responsive UI structure suitable for an Android application demonstration.
