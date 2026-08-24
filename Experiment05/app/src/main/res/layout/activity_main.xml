@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Reminders"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#202124"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Notification Demo"
+        android:textSize="16sp"
+        android:textColor="#5F6368"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAD Lab Reminder"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#202124"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send a notification to remind the student about an important task."
+            android:textSize="15sp"
+            android:textColor="#5F6368"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnNotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND NOTIFICATION"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStudentDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Name: Bhavya Khatri\nUSN: 25MCAR0217"
+        android:textColor="#202124"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Status: Ready"
+        android:textSize="14sp"
+        android:textColor="#5F6368"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
