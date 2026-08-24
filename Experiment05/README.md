@@ -241,12 +241,6 @@ Notification was successfully generated and the status changed to `Sent`.
 
 **Result:** PASS
 
-**Screenshot:**
-
-```text
-screenshots/test_case_1_notification_sent.png
-```
-
 ---
 
 ## Test Case 2 — Notification Display and Interaction
@@ -278,12 +272,6 @@ The notification appeared successfully in the notification shade and the notific
 
 **Result:** PASS
 
-**Screenshot:**
-
-```text
-screenshots/test_case_2_notification_shade.png
-```
-
 ---
 
 ## Test Case 3 — Student Name and USN
@@ -314,44 +302,20 @@ The Name and USN were displayed correctly.
 
 **Result:** PASS
 
-**Screenshot:**
+## 11. Test Case Evidence
 
-```text
-screenshots/test_case_3_name_usn.png
-```
 
-## 11. Output Screenshots
 
-Add the final application screenshots to the `screenshots` folder.
+https://github.com/user-attachments/assets/81974521-5c60-4ae7-b433-3057180cc3a4
 
-Recommended files:
 
-```text
-screenshots/
-├── main_screen.png
-├── test_case_1_notification_sent.png
-├── test_case_2_notification_shade.png
-└── test_case_3_name_usn.png
-```
 
-### Main Application
 
-<!-- Add final application screenshot here -->
+https://github.com/user-attachments/assets/88dfa32b-fcbc-4fc0-b01a-0fbb03955abd
 
-### Notification
 
-<!-- Add notification shade screenshot here -->
 
-## 12. Test Case Evidence
-
-The submitted screenshots demonstrate:
-
-1. Successful notification generation.
-2. Successful notification display in the Android notification shade.
-3. Successful notification interaction.
-4. Correct display of the student's Name and USN.
-
-## 13. Result
+## 12. Result
 
 The Android application was successfully developed to demonstrate the Android Notification mechanism.
 
