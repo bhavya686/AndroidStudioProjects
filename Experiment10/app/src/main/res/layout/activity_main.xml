@@ -2,8 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="#FFFFFF">
+    android:background="#F6F7FB"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,46 +14,88 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contacts Content Provider"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#202124"
-            android:gravity="center"
-            android:paddingBottom="8dp" />
+            android:text="My Contacts"
+            android:textColor="#20233A"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bhavya Khatri | 25MCAR0217"
-            android:textSize="16sp"
-            android:textColor="#444444"
-            android:gravity="center"
-            android:paddingBottom="20dp" />
+            android:layout_marginTop="5dp"
+            android:text="Contacts Content Provider"
+            android:textColor="#6B7280"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Bhavya Khatri  •  25MCAR0217"
+            android:textColor="#5141A5"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnLoadContacts"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Load Contacts" />
+            android:layout_height="54dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#6750A4"
+            android:text="Load Contacts"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tvContactCount"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contacts will appear below."
-            android:textSize="16sp"
-            android:textColor="#202124"
-            android:paddingTop="16dp"
-            android:paddingBottom="8dp" />
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your directory"
+                android:textColor="#20233A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContactCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E9E3F8"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="7dp"
+                android:text="Not loaded"
+                android:textColor="#5141A5"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/tvContacts"
+            android:id="@+id/tvEmptyState"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#202124"
-            android:textSize="16sp"
-            android:lineSpacingExtra="6dp"
-            android:text="No contacts loaded yet." />
+            android:layout_marginTop="18dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="28dp"
+            android:text="Tap Load Contacts to view your directory."
+            android:textColor="#6B7280"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/contactsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical" />
 
     </LinearLayout>
 </ScrollView>
