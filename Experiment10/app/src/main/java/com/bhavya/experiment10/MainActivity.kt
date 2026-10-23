@@ -118,12 +118,11 @@ class MainActivity : AppCompatActivity() {
             tvEmptyState.text = "Unable to load contacts. Please try again."
         }
     }
-
     private fun addContactCard(name: String, number: String) {
         val card = LinearLayout(this).apply {
-            orientation = LinearLayout.HORIZONTAL
-            gravity = Gravity.CENTER_VERTICAL
-            setPadding(16, 14, 16, 14)
+            orientation = LinearLayout.VERTICAL
+            setPadding(18, 16, 18, 16)
+
             background = GradientDrawable().apply {
                 setColor(Color.WHITE)
                 cornerRadius = 20f
@@ -131,31 +130,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val avatar = TextView(this).apply {
-            text = name.trim().firstOrNull()?.uppercase() ?: "?"
-            textSize = 19f
-            setTextColor(Color.rgb(81, 65, 165))
-            gravity = Gravity.CENTER
-            typeface = Typeface.DEFAULT_BOLD
-            background = GradientDrawable().apply {
-                setColor(Color.rgb(233, 227, 248))
-                shape = GradientDrawable.OVAL
-            }
-        }
-
-        card.addView(
-            avatar,
-            LinearLayout.LayoutParams(48, 48)
-        )
-
-        val details = LinearLayout(this).apply {
-            orientation = LinearLayout.VERTICAL
-            setPadding(14, 0, 0, 0)
-        }
-
         val nameView = TextView(this).apply {
             text = name
-            textSize = 16f
+            textSize = 17f
             setTextColor(Color.rgb(32, 35, 58))
             typeface = Typeface.DEFAULT_BOLD
         }
@@ -164,20 +141,11 @@ class MainActivity : AppCompatActivity() {
             text = number
             textSize = 14f
             setTextColor(Color.rgb(107, 114, 128))
-            setPadding(0, 5, 0, 0)
+            setPadding(0, 6, 0, 0)
         }
 
-        details.addView(nameView)
-        details.addView(numberView)
-
-        card.addView(
-            details,
-            LinearLayout.LayoutParams(
-                0,
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                1f
-            )
-        )
+        card.addView(nameView)
+        card.addView(numberView)
 
         val cardParams = LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.MATCH_PARENT,
