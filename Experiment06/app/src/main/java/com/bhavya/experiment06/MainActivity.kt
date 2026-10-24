@@ -37,12 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = ArrayAdapter(
             this,
-            android.R.layout.simple_spinner_item,
+            R.layout.spinner_item,
             courses
         )
 
         adapter.setDropDownViewResource(
-            android.R.layout.simple_spinner_dropdown_item
+            R.layout.spinner_dropdown_item
         )
 
         courseSpinner.adapter = adapter
@@ -84,13 +84,16 @@ class MainActivity : AppCompatActivity() {
             }
 
             val selectedGender =
-                findViewById<RadioButton>(selectedGenderId).text.toString()
+                findViewById<RadioButton>(selectedGenderId)
+                    .text.toString()
 
-            val selectedCourse = courseSpinner.selectedItem.toString()
+            val selectedCourse =
+                courseSpinner.selectedItem.toString()
 
+            resultText.visibility = android.view.View.VISIBLE
             resultText.text = """
                 Registration Successful!
-                
+
                 Name: $name
                 USN: $usn
                 Gender: $selectedGender

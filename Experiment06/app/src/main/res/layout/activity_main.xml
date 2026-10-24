@@ -1,19 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#F5F6FA"
+    android:fillViewport="true"
+    android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Student Registration"
+            android:textColor="#1B2B55"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Enter your details below"
+            android:textColor="#667085"
+            android:textSize="17sp" />
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="#344054"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="#7C5CC4"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName|textCapWords"
+            android:minHeight="52dp"
+            android:padding="10dp"
+            android:textColor="#1B2B55"
+            android:textColorHint="#7A8499"
+            android:textSize="16sp" />
+
+        <!-- USN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="University Seat Number (USN)"
+            android:textColor="#344054"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/usnInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="#7C5CC4"
+            android:hint="Enter your USN"
+            android:inputType="textCapCharacters"
+            android:minHeight="52dp"
+            android:padding="10dp"
+            android:textColor="#1B2B55"
+            android:textColorHint="#7A8499"
+            android:textSize="16sp" />
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#344054"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="22dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7C5CC4"
+                android:minHeight="48dp"
+                android:text="Male"
+                android:textColor="#344054"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:buttonTint="#7C5CC4"
+                android:minHeight="48dp"
+                android:text="Female"
+                android:textColor="#344054"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/otherRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:buttonTint="#7C5CC4"
+                android:minHeight="48dp"
+                android:text="Other"
+                android:textColor="#344054"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <!-- Course -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course"
+            android:textColor="#344054"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/courseSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#7C5CC4"
+            android:spinnerMode="dropdown" />
+
+        <!-- Confirmation -->
+        <CheckBox
+            android:id="@+id/termsCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:buttonTint="#7C5CC4"
+            android:minHeight="48dp"
+            android:padding="4dp"
+            android:text="I confirm that the details are correct"
+            android:textColor="#344054"
+            android:textSize="14sp" />
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#C9AEFF"
+            android:text="Submit Registration"
+            android:textAllCaps="false"
+            android:textColor="#241447"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textColor="#1B2B55"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>
