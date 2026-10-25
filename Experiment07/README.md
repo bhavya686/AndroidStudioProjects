@@ -82,7 +82,7 @@ Experiment07/
 
 **Screenshot:**
 
-![Test Case 1 - Initial Display](screenshots/test1_initial_display.png)
+![Test Case 1 - Initial Display](screenshots/test1_initial_display.jpeg)
 
 ![alt text](test1_initial_display.jpeg)
 
@@ -96,7 +96,7 @@ Experiment07/
 
 **Screenshot:**
 
-![Test Case 2 - Destination Selection](screenshots/test2_destination_selection.png)
+![Test Case 2 - Destination Selection](screenshots/test2_destination_selection.jpeg)
 
 ![alt text](test2_destination_selection.jpeg)
 
@@ -110,7 +110,7 @@ Experiment07/
 
 **Screenshot:**
 
-![Test Case 3 - Landscape Layout](screenshots/test3_landscape_layout.png)
+![Test Case 3 - Landscape Layout](screenshots/test3_landscape_layout.jpeg)
 
 ![alt text](test3_landscape_layout.jpeg)
 
