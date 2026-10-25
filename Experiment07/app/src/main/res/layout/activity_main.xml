@@ -1,19 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#F5F6FA"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Travel Explorer"
+            android:textColor="#1B2B55"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Discover beautiful destinations"
+            android:textColor="#667085"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/destinationImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#E0D8F5"
+            android:contentDescription="Selected destination image"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/destinationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Select a destination"
+            android:textColor="#1B2B55"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/destinationDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Choose a place from the list below."
+            android:textColor="#475467"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Explore destinations"
+            android:textColor="#1B2B55"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/destinationList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#E4E7EC"
+            android:dividerHeight="1dp"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</ScrollView>
