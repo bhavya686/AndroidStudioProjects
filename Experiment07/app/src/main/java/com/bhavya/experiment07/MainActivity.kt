@@ -26,34 +26,34 @@ class MainActivity : AppCompatActivity() {
 
     private val destinations = listOf(
         Destination(
-            "Taj Mahal",
-            "Agra, India",
-            "A famous white marble monument and symbol of love.",
-            android.R.drawable.ic_menu_gallery
+            name = "Taj Mahal",
+            location = "Agra, India",
+            description = "A famous white marble monument and symbol of love.",
+            imageResId = R.drawable.taj_mahal
         ),
         Destination(
-            "Eiffel Tower",
-            "Paris, France",
-            "An iconic landmark known for its impressive iron structure.",
-            android.R.drawable.ic_menu_camera
+            name = "Eiffel Tower",
+            location = "Paris, France",
+            description = "An iconic landmark known for its impressive iron structure.",
+            imageResId = R.drawable.eiffel_tower
         ),
         Destination(
-            "Bali",
-            "Indonesia",
-            "A tropical destination known for beaches and green landscapes.",
-            android.R.drawable.ic_menu_compass
+            name = "Bali",
+            location = "Indonesia",
+            description = "A tropical destination known for its beaches and green landscapes.",
+            imageResId = R.drawable.bali
         ),
         Destination(
-            "Swiss Alps",
-            "Switzerland",
-            "A beautiful mountain region with scenic views.",
-            android.R.drawable.ic_menu_mapmode
+            name = "Swiss Alps",
+            location = "Switzerland",
+            description = "A beautiful mountain region with spectacular scenic views.",
+            imageResId = R.drawable.swiss_alps
         ),
         Destination(
-            "Great Wall",
-            "China",
-            "A historic wall stretching across mountainous landscapes.",
-            android.R.drawable.ic_menu_directions
+            name = "Great Wall",
+            location = "China",
+            description = "A historic wall stretching across mountainous landscapes.",
+            imageResId = R.drawable.great_wall
         )
     )
 
@@ -72,15 +72,8 @@ class MainActivity : AppCompatActivity() {
             R.id.itemName,
             destinations
         ) {
-            override fun getView(
-                position: Int,
-                convertView: View?,
-                parent: ViewGroup
-            ): View {
-                return createDestinationRow(position, convertView, parent)
-            }
 
-            override fun getDropDownView(
+            override fun getView(
                 position: Int,
                 convertView: View?,
                 parent: ViewGroup
@@ -98,14 +91,13 @@ class MainActivity : AppCompatActivity() {
 
                 val destination = getItem(position)!!
 
-                row.findViewById<ImageView>(R.id.itemImage)
-                    .setImageResource(destination.imageResId)
+                val itemImage = row.findViewById<ImageView>(R.id.itemImage)
+                val itemName = row.findViewById<TextView>(R.id.itemName)
+                val itemLocation = row.findViewById<TextView>(R.id.itemLocation)
 
-                row.findViewById<TextView>(R.id.itemName)
-                    .text = destination.name
-
-                row.findViewById<TextView>(R.id.itemLocation)
-                    .text = destination.location
+                itemImage.setImageResource(destination.imageResId)
+                itemName.text = destination.name
+                itemLocation.text = destination.location
 
                 return row
             }
@@ -117,6 +109,7 @@ class MainActivity : AppCompatActivity() {
             showDestination(destinations[position])
         }
 
+        // Display the first destination when the app starts.
         showDestination(destinations[0])
     }
 
