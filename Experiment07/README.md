@@ -84,7 +84,7 @@ Experiment07/
 
 ![Test Case 1 - Initial Display](screenshots/test1_initial_display.jpeg)
 
-![alt text](test1_initial_display.jpeg)
+<img width="720" height="1600" alt="test1_initial_display" src="https://github.com/user-attachments/assets/5dcfceb6-f759-42ca-a209-b2849ef2c506" />
 
 ### Test Case 2: Destination Selection
 
@@ -98,7 +98,7 @@ Experiment07/
 
 ![Test Case 2 - Destination Selection](screenshots/test2_destination_selection.jpeg)
 
-![alt text](test2_destination_selection.jpeg)
+<img width="720" height="1600" alt="test2_destination_selection" src="https://github.com/user-attachments/assets/e055f93e-656b-4445-9fa4-d1a5f6bce29d" />
 
 ### Test Case 3: Adaptive Landscape Layout
 
@@ -112,7 +112,7 @@ Experiment07/
 
 ![Test Case 3 - Landscape Layout](screenshots/test3_landscape_layout.jpeg)
 
-![alt text](test3_landscape_layout.jpeg)
+<img width="1600" height="720" alt="test3_landscape_layout" src="https://github.com/user-attachments/assets/66a346ca-2622-473e-8773-18ad40de5679" />
 
 ## Conclusion
 The Travel Explorer application was developed successfully using `ListView` and `ImageView`. It displays travel destinations, responds to user selection, and uses alternative XML layouts to support portrait and landscape orientations.
