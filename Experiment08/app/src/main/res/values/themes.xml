@@ -1,9 +1,11 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Experiment08" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Experiment08" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#6750A4</item>
+        <item name="colorPrimaryDark">#463477</item>
+        <item name="colorAccent">#C9AEFF</item>
+        <item name="android:statusBarColor">#463477</item>
+        <item name="android:navigationBarColor">#1B1B1F</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
-
-    <style name="Theme.Experiment08" parent="Base.Theme.Experiment08" />
 </resources>
