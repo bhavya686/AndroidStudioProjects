@@ -4,6 +4,7 @@ plugins {
 
 android {
     namespace = "com.bhavya.experiment11"
+
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -27,6 +28,7 @@ android {
             }
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -39,6 +41,10 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+
+    // OpenStreetMap library
+    implementation("org.osmdroid:osmdroid-android:6.1.20")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
